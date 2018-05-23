@@ -4,6 +4,9 @@
     5/23/2018
 */
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -11,7 +14,11 @@ public abstract class Cipher {
 
     private char[][] cipher;
 
-    public Cipher(){
+    public Cipher(){  //standard cipher
+        //place all of the values and then pick random locations to shift all of the values for the . and /
+    }
+
+    public Cipher(boolean random){  //fully randomized cipher
         cipher = new char[11][4];
 
         Random rand = new Random();  //***use "secureRandom" instead later?
@@ -37,7 +44,7 @@ public abstract class Cipher {
         //sets the less common characters in the next two rows
         //***randomize the "label" cell values to add additional security
             int location = rand.nextInt(20);  //is this bound inclusive?
-        
+
             cipher[0][2] = 48+4;
             cipher[0][3] = 48+6;
 
@@ -61,6 +68,32 @@ public abstract class Cipher {
                 location++;
             }
             cipher[1 + location % 10][2 + location / 10] = '/';
+    }
+
+    public void writeToFile(){
+        File file = new File("cipher.txt");
+
+        PrintWriter output = null;
+
+        try{
+            output = new PrintWriter("cipher.txt");
+        }
+        catch(FileNotFoundException e){
+            System.out.println("Cannot create file");
+            System.exit(1);
+        }
+
+        for(int i = 0; i < this.cipher[0].length; i++){
+            for(int j = 0; j < this.cipher.length; j++){
+                if(this.cipher[j][i] == 0) output.print('*');  //bytecode 42
+                output.print(this.cipher[j][i] + " ");
+            }
+            output.println();
+        }
+
+        output.close();
+
+
     }
 
     public Cipher(String fileName){

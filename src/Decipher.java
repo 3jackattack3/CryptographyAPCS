@@ -6,4 +6,7 @@
 
 public class Decipher extends Cipher{
 
+    public Decipher(){
+        super();
+    }
 }

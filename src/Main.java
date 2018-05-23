@@ -6,9 +6,11 @@
 
 public class Main {
     public static void main(String args[]) {
-        Cipher test = new Encipher();
+        Cipher test = new Encipher(true);
 
         printMatrix(test.getCipher());
+
+        test.writeToFile();
     }
 
     public static void printMatrix(char[][] matrix){

@@ -6,7 +6,10 @@
 
 public class Encipher extends Cipher{
 
-    public Encipher(){
-        super();
+    public Encipher(boolean random){
+        super(random);
+    }
+    public Encipher(String fileName){
+        super(fileName);
     }
 }
