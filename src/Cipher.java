@@ -17,22 +17,22 @@ public abstract class Cipher {
         Random rand = new Random();  //***use "secureRandom" instead later?
 
         //***scramble the order later to add additional security
-        for(byte i = 48; i < 48 + cipher.length-1; i++){  //initializes the first row to the values 0-9, starting from the second cell
-            cipher[(int) i+1][0] = (char) i;
+        for(byte i = 0; i < cipher.length-1; i++){  //initializes the first row to the values 0-9, starting from the second cell
+            cipher[i+1][0] = (char) (i+48);
         }
 
         //***randomize which cells are empty to add additional security
         //set common characters:
-            cipher[0+1][0] = 'E';
-            cipher[1+1][0] = 'T';
-            cipher[2+1][0] = 'A';
-            cipher[3+1][0] = 'O';
+            cipher[0+1][1] = 'E';
+            cipher[1+1][1] = 'T';
+            cipher[2+1][1] = 'A';
+            cipher[3+1][1] = 'O';
 
-            cipher[5+1][0] = 'N';
+            cipher[5+1][1] = 'N';
 
-            cipher[7+1][0] = 'R';
-            cipher[8+1][0] = 'I';
-            cipher[9+1][0] = 'S';
+            cipher[7+1][1] = 'R';
+            cipher[8+1][1] = 'I';
+            cipher[9+1][1] = 'S';
 
         //sets the less common characters in the next two rows
         //***randomize the "label" cell values to add additional security
@@ -42,11 +42,20 @@ public abstract class Cipher {
             cipher[0][3] = 48+6;
 
             for(byte j = 0; j <= 90-48; j++){
-                while(cipher[location/10][location%10] != 0){
-                    cipher[location/10][location%10] = (char) (j+48);
+                while(cipher[1 + location%10][1 + location/10] != 0){
+                    cipher[1 + location%10][1 + location/10] = (char) (j+48);
                     location = rand.nextInt(20);
                 }
             }
+
+    }
+
+    public Cipher(String fileName){
+        //initialize the cipher from the contents of a file instead, this allows for the encipher and decipher objects to be paired.
+    }
+
+    public char[][] getCipher(){
+        return cipher;
     }
 
 }

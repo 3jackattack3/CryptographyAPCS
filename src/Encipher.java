@@ -6,4 +6,7 @@
 
 public class Encipher extends Cipher{
 
+    public Encipher(){
+        super();
+    }
 }
