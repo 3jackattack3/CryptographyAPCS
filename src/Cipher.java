@@ -37,17 +37,30 @@ public abstract class Cipher {
         //sets the less common characters in the next two rows
         //***randomize the "label" cell values to add additional security
             int location = rand.nextInt(20);  //is this bound inclusive?
-
+        
             cipher[0][2] = 48+4;
             cipher[0][3] = 48+6;
 
-            for(byte j = 0; j <= 90-48; j++){
-                while(cipher[1 + location%10][1 + location/10] != 0){
-                    cipher[1 + location%10][1 + location/10] = (char) (j+48);
-                    location = rand.nextInt(20);
+            for(byte j = 65; j <= 90; j++){
+                if(j != 'E' && j != 'T' && j != 'A' && j != 'O' && j != 'N' && j != 'R' && j != 'I' && j != 'S') {
+                    while (cipher[1 + location % 10][2 + location / 10] != 0) {
+                        location = rand.nextInt(20);
+                    }
+                    cipher[1 + location % 10][2 + location / 10] = (char) j;
                 }
             }
 
+        //sets the location of the '.' and the '/'
+            location = 0;
+
+            while (cipher[1 + location % 10][2 + location / 10] != 0) {
+                location++;
+            }
+            cipher[1 + location % 10][2 + location / 10] = '.';
+            while (cipher[1 + location % 10][2 + location / 10] != 0) {
+                location++;
+            }
+            cipher[1 + location % 10][2 + location / 10] = '/';
     }
 
     public Cipher(String fileName){

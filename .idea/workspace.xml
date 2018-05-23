@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33d764e-442d-47cb-bd74-0f4ef8350ec2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Encipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +17,12 @@
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="129">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+                <element signature="e#2021#2022#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +76,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Decipher.java" />
         <option value="$PROJECT_DIR$/src/Encipher.java" />
-        <option value="$PROJECT_DIR$/src/Cipher.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Cipher.java" />
       </list>
     </option>
   </component>
@@ -265,12 +262,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="129">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2021#2022#0" expanded="true" />
           </folding>
         </state>
       </provider>
