@@ -4,6 +4,6 @@
     5/23/2018
 */
 
-public class Decipher {
+public class Decipher extends Cipher{
 
 }
