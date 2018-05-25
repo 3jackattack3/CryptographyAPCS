@@ -93,11 +93,6 @@ public abstract class Cipher {
 
         int location = rand.nextInt(10);
 
-        //***scramble the order later to add additional security
-//        for(byte i = 0; i < cipher.length-1; i++){  //initializes the first row to the values 0-9, starting from the second cell
-//            cipher[i+1][0] = (char) (i+48);
-//        }
-
         for(byte j = 0; j <= 9; j++){
             while (cipher[1 + location % 10][0] != 0) {
                 location = rand.nextInt(10);
@@ -114,14 +109,15 @@ public abstract class Cipher {
 
             Arrays.sort(spaces);
 
-            cipher[0+1][1] = 'E';
-            cipher[1+1][1] = 'T';
-            cipher[2+1][1] = 'A';
-            cipher[3+1][1] = 'O';
-            cipher[4+1][1] = 'N';
-            cipher[5+1][1] = 'R';
-            cipher[6+1][1] = 'I';
-            cipher[7+1][1] = 'S';
+            char[] commonLetters = {'E', 'T', 'A', 'O', 'N', 'R', 'I', 'S'};
+            location = rand.nextInt(8);
+
+            for(byte k = 0; k < 8; k++){
+                while (cipher[1 + location % 10][1] != 0){
+                    location = rand.nextInt(8);
+                }
+                cipher[1 + location % 10][1] = commonLetters[k];
+            }
 
             for(int a = 8; a > spaces[0]; a--){
                 cipher[a + 1][1] = cipher[a + 1 - 1][1];

@@ -4,9 +4,6 @@
     <list default="true" id="e33d764e-442d-47cb-bd74-0f4ef8350ec2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/cipher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cipher.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Decipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Encipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,17 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="142" column="47" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+            <state relative-caret-position="-894">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Cipher#0;class#Cipher#0" />
                 <element signature="method#writeToFile#0;class#Cipher#0" />
                 <element signature="method#Cipher#2;class#Cipher#0" />
                 <element signature="method#getStringCipher#0;class#Cipher#0" />
+                <element signature="method#getEncipheredValue#0;class#Cipher#0" />
               </folding>
             </state>
           </provider>
@@ -63,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -87,10 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cipher.java" />
         <option value="$PROJECT_DIR$/src/Decipher.java" />
         <option value="$PROJECT_DIR$/src/Encipher.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Cipher.java" />
       </list>
     </option>
   </component>
@@ -286,6 +284,7 @@
             <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
+            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -327,20 +326,6 @@
     <entry file="file://$PROJECT_DIR$/cipher.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="142" column="47" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Cipher#0;class#Cipher#0" />
-            <element signature="method#writeToFile#0;class#Cipher#0" />
-            <element signature="method#Cipher#2;class#Cipher#0" />
-            <element signature="method#getStringCipher#0;class#Cipher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Encipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -365,6 +350,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-894">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Cipher#0;class#Cipher#0" />
+            <element signature="method#writeToFile#0;class#Cipher#0" />
+            <element signature="method#Cipher#2;class#Cipher#0" />
+            <element signature="method#getStringCipher#0;class#Cipher#0" />
+            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
+          </folding>
         </state>
       </provider>
     </entry>
