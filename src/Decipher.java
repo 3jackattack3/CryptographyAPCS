@@ -30,8 +30,10 @@ public class Decipher extends Cipher{
 
         for(int i = 0; i < message.length(); i++){
             column = super.getStringCipher().substring(0,11).indexOf(message.charAt(i));
-
-            if(super.getCipher()[column][1] == 0){  //if there is a null value in the first row space, then looks at two digit combos
+            if(super.getCipher()[column][1] != 0){  //if there is a null value in the first row space, then looks at two digit combos
+                deciphered += super.getCipher()[column][1];
+            }
+            else{
                 nextColumn = super.getStringCipher().substring(0,11).indexOf(message.charAt(i+1));
                 item = (super.getCipher()[nextColumn][super.getStringCipher().substring(11).indexOf(message.charAt(i))/10 + 1]);  //getCipher[nextColumn][row]
                 if(item == '/'){  //escape character
@@ -49,7 +51,6 @@ public class Decipher extends Cipher{
                     i++;
                 }
             }
-            else deciphered += super.getCipher()[column][1];
         }
 
         return deciphered;

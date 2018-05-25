@@ -36,7 +36,7 @@ public class Encipher extends Cipher{
 //                    i++;
 //                }
                 enciphered+=message.charAt(i);
-                i++;  //not sure if this is necessary
+//                i++;  //not sure if this is necessary
                 enciphered+=super.getEncipheredValue('.');
 //                i--;
             }

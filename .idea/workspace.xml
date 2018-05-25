@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33d764e-442d-47cb-bd74-0f4ef8350ec2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/decipheredOutput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/encipheredOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cipher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cipher.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Cipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Cipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encipheredOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encipheredOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Decipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Encipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,22 +39,22 @@
       <file leaf-file-name="Encipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Encipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="252">
+              <caret line="38" column="55" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Decipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="78">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2">
@@ -98,9 +93,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Encipher.java" />
         <option value="$PROJECT_DIR$/src/Cipher.java" />
         <option value="$PROJECT_DIR$/src/Decipher.java" />
+        <option value="$PROJECT_DIR$/src/Encipher.java" />
       </list>
     </option>
   </component>
@@ -224,7 +219,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19099757" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38199514" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3296837" />
       <window_info id="Capture Tool" order="2" />
@@ -411,17 +406,6 @@
     <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#printMatrix#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cipher">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -439,17 +423,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encipher.java">
+    <entry file="file://$PROJECT_DIR$/src/Decipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="78">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Decipher.java">
+    <entry file="file://$PROJECT_DIR$/src/Encipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        <state relative-caret-position="252">
+          <caret line="38" column="55" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#printMatrix#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
