@@ -16,7 +16,7 @@ public class Main {
 
         Cipher decipherTest = new Decipher("cipher.txt");
 
-        System.out.println("\n" + decipherTest.cipher(encipherTest.cipher("jack123jack")));  //encipherTest.cipher("eee")"6400049"
+        System.out.println("\n" + decipherTest.cipher(encipherTest.cipher("hello my na1235me is jack")));  //encipherTest.cipher("eee")"6400049"
     }
 
     public static void printMatrix(char[][] matrix){

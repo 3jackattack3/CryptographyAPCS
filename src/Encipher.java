@@ -34,8 +34,9 @@ public class Encipher extends Cipher{
                     i++;
                 }
                 enciphered+=super.getEncipheredValue('.');
+                i--;
             }
-            enciphered += super.getEncipheredValue(message.charAt(i));
+            else enciphered += super.getEncipheredValue(message.charAt(i));
         }
 
 //        enciphered += super.getEncipheredValue('.');
