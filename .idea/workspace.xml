@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33d764e-442d-47cb-bd74-0f4ef8350ec2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/inputText.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cipher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cipher.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decipheredOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/decipheredOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/encipheredOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encipheredOutput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Decipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Encipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,15 +25,8 @@
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Cipher#1;class#Cipher#0" />
-                <element signature="method#Cipher#2;class#Cipher#0" />
-                <element signature="method#getStringCipher#0;class#Cipher#0" />
-                <element signature="method#getEncipheredValue#0;class#Cipher#0" />
-              </folding>
+            <state relative-caret-position="208">
+              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
             </state>
           </provider>
         </entry>
@@ -39,26 +34,26 @@
       <file leaf-file-name="Encipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Encipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="38" column="55" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="264">
+              <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Decipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+            <state relative-caret-position="136">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
+            <state relative-caret-position="517">
+              <caret line="76" column="31" lean-forward="true" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printMatrix#0;class#Main#0" />
@@ -67,9 +62,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="cipher.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cipher.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="inputText.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputText.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="encipheredOutput.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="decipheredOutput.txt" pinned="false" current-in-tab="false">
@@ -93,16 +106,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Encipher.java" />
+        <option value="$PROJECT_DIR$/inputText.txt" />
         <option value="$PROJECT_DIR$/src/Cipher.java" />
         <option value="$PROJECT_DIR$/src/Decipher.java" />
-        <option value="$PROJECT_DIR$/src/Encipher.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1269" />
-    <option name="width" value="1302" />
-    <option name="height" value="1392" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1270" />
+    <option name="width" value="1301" />
+    <option name="height" value="1391" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,6 +132,11 @@
             <path>
               <item name="CryptographyAPCS" type="b2602c69:ProjectViewProjectNode" />
               <item name="CryptographyAPCS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CryptographyAPCS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CryptographyAPCS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,24 +232,24 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3296837" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3296837" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38199514" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25304136" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3296837" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09080258" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08670182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39902675" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -238,34 +257,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12478032" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26885644" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39902675" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3296837" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -283,9 +274,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Cipher#1;class#Cipher#0" />
+            <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
-            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -322,9 +313,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Cipher#1;class#Cipher#0" />
+            <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
-            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -361,9 +352,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Cipher#1;class#Cipher#0" />
+            <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
-            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
@@ -400,51 +391,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decipheredOutput.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cipher">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/Encipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+        <state relative-caret-position="264">
+          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decipheredOutput.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="76" column="31" lean-forward="true" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Cipher#1;class#Cipher#0" />
-            <element signature="method#Cipher#2;class#Cipher#0" />
-            <element signature="method#getStringCipher#0;class#Cipher#0" />
-            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
+            <element signature="method#printMatrix#0;class#Main#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cipher.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputText.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Decipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Encipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#printMatrix#0;class#Main#0" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

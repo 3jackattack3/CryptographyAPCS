@@ -235,17 +235,17 @@ public abstract class Cipher {
         return stringCipher;
     }
 
-    protected String getEncipheredValue(char item){
+    protected String getEncipheredValue(char item){  //here's where I'll implement the mod addition
         int[] index = new int[2];
         String temp = "";
 
         index[0] = getStringCipher().indexOf(item) / 11;
         index[1] = getStringCipher().indexOf(item) % 11;
 
-        if(index[0] == 1) temp += getCipher()[index[1]][0];
+        if(index[0] == 1) temp += (getCipher()[index[1]][0]);// + 2)%10;
         else {
-            temp += (char) getCipher()[0][index[0]];  //double check that these indeces are in the right order and stuff, this is a likely area of error
-            temp += (char) getCipher()[index[1]][0];
+            temp += (char) (getCipher()[0][index[0]]);// + 2) % 10;  //double check that these indeces are in the right order and stuff, this is a likely area of error
+            temp += (char) (getCipher()[index[1]][0]);// + 2) % 10;
         }
 
         return temp;

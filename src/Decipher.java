@@ -28,8 +28,9 @@ public class Decipher extends Cipher{
 
 //        System.out.println("\n" + message);
 
-        for(int i = 0; i < message.length(); i++){
+        for(int i = 0; i < message.length(); i++){  //do not do the mod addition for digits
             column = super.getStringCipher().substring(0,11).indexOf(message.charAt(i));
+//            column = (column -2) % 10;
             if(super.getCipher()[column][1] != 0){  //if there is a null value in the first row space, then looks at two digit combos
                 deciphered += super.getCipher()[column][1];
             }

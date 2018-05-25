@@ -33,7 +33,7 @@ public class Main {
 
 
         while(choice >= 0 ){
-            System.out.println("\n1. create a random encipher\n2. create a standard encipher\n3. create an encipher from a text file\n4. enter text to encipher\n5. load a file with text to encipher\n6. create a random decipher\n7. create a standard decipher\n8. create a decipher from a text file\n9. enter text to decipher\n10. load a file with text to decipher\n11. print grid\n-1. exit");
+            System.out.println("\n1. create a random encipher\n2. create a standard encipher\n3. create an encipher from a text file\n4. enter text to encipher\n5. load a file with text to encipher\n6. create a random decipher\n7. create a standard decipher\n8. create a decipher from a text file\n9. enter text to decipher\n10. load a file with text to decipher\n11. print grid\n12. check for an encipher grid\n13. check for a decipher grid\n-1. exit");
             choice = Integer.parseInt(in.nextLine());
 
             switch(choice){
@@ -72,7 +72,11 @@ public class Main {
                          writeToFile(decipher, fileName, "decipheredOutput.txt");
                          break;
                 case 11: printMatrix(encipher.getCipher());
-                //NEED A METHOD TO DISPLAY THE GRID
+                         break;
+                case 12: System.out.println(encipher != null);
+                         break;
+                case 13: System.out.println(decipher != null);
+                         break;
                 default: break;
                 }
         }

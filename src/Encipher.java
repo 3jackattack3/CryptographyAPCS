@@ -21,7 +21,7 @@ public class Encipher extends Cipher{
     }
 
     @Override
-    public String cipher(String message) {
+    public String cipher(String message) {  //adding mod addition of 2 to each enciphered value
         String enciphered = "";
 
         message = message.toUpperCase().replace(" ", "").replace(",", "").replace(".", "").replace("\'", "").replace("!", "").replace("?", "");
