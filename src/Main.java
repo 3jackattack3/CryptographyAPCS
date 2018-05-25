@@ -6,11 +6,17 @@
 
 public class Main {
     public static void main(String args[]) {
-        Cipher test = new Encipher(true);
+        Cipher encipherTest = new Encipher("cipher.txt");
 
-        printMatrix(test.getCipher());
+        printMatrix(encipherTest.getCipher());
 
-        test.writeToFile();
+        encipherTest.writeToFile();
+
+//        System.out.println("\n" + encipherTest.cipher("eee"));
+
+        Cipher decipherTest = new Decipher("cipher.txt");
+
+        System.out.println("\n" + decipherTest.cipher(encipherTest.cipher("hello my name is jack")));  //encipherTest.cipher("eee")"6400049"
     }
 
     public static void printMatrix(char[][] matrix){

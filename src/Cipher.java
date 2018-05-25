@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public abstract class Cipher {
 
@@ -98,10 +99,54 @@ public abstract class Cipher {
 
     public Cipher(String fileName){
         //initialize the cipher from the contents of a file instead, this allows for the encipher and decipher objects to be paired.
+        cipher = new char[11][4];
+        String[] line;
+        Scanner in = null;
+
+        try{
+            in = new Scanner(new File(fileName));
+        }
+        catch (FileNotFoundException e){
+            System.out.println("can't read the file: " + fileName);
+        }
+
+        for(int i = 0; i < cipher[0].length; i++){
+            line = in.nextLine().split(" ");
+            for(int j = 0; j < cipher.length; j++){  //cipher[j][i]
+                if(line[j].charAt(0) != '*') cipher[j][i] = line[j].charAt(0);
+            }
+        }
     }
 
     public char[][] getCipher(){
         return cipher;
     }
 
+    public String getStringCipher(){
+        String stringCipher = "";
+
+        for(int i = 0; i < cipher[0].length; i++){
+            for(int j = 0; j < cipher.length; j++){  //cipher[j][i]
+                if(this.cipher[j][i] == 0) stringCipher += '*';  //bytecode 42
+                else stringCipher += cipher[j][i];
+            }
+        }
+
+        return stringCipher;
+    }
+
+    protected String getEncipheredValue(char item){
+        int[] index = new int[2];
+        String temp = "";
+
+        index[0] = getStringCipher().indexOf(item) / 11;
+        index[1] = getStringCipher().indexOf(item) % 11;
+
+        if((char) getCipher()[0][index[0]] != 0) temp += (char) getCipher()[0][index[0]];  //double check that these indeces are in the right order and stuff, this is a likely area of error
+        temp += (char) getCipher()[index[1]][0];
+
+        return temp;
+    }
+
+    public abstract String cipher(String message);
 }
