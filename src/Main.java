@@ -6,7 +6,7 @@
 
 public class Main {
     public static void main(String args[]) {
-        Cipher encipherTest = new Encipher("cipher.txt");
+        Cipher encipherTest = new Encipher(true);
 
         printMatrix(encipherTest.getCipher());
 

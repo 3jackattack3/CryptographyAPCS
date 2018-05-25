@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -28,26 +29,43 @@ public abstract class Cipher {
         for(byte i = 0; i < cipher.length-1; i++){  //initializes the first row to the values 0-9, starting from the second cell
             cipher[i+1][0] = (char) (i+48);
         }
-
-        //***randomize which cells are empty to add additional security
+        
         //set common characters:
+            int[] spaces = new int[2];
+            spaces[0] = rand.nextInt(9);
+            do{
+                spaces[1] = rand.nextInt(9);
+            }while(spaces[1] == spaces[0]);
+
+            Arrays.sort(spaces);
+
             cipher[0+1][1] = 'E';
             cipher[1+1][1] = 'T';
             cipher[2+1][1] = 'A';
             cipher[3+1][1] = 'O';
+            cipher[4+1][1] = 'N';
+            cipher[5+1][1] = 'R';
+            cipher[6+1][1] = 'I';
+            cipher[7+1][1] = 'S';
 
-            cipher[5+1][1] = 'N';
+            for(int a = 8; a > spaces[0]; a--){
+                cipher[a + 1][1] = cipher[a + 1 - 1][1];
+            }
 
-            cipher[7+1][1] = 'R';
-            cipher[8+1][1] = 'I';
-            cipher[9+1][1] = 'S';
+            cipher[spaces[0] + 1][1] = 0;
+
+        for(int b = 9; b > spaces[1]; b--){
+            cipher[b + 1][1] = cipher[b + 1 - 1][1];
+        }
+
+        cipher[spaces[1] + 1][1] = 0;
 
         //sets the less common characters in the next two rows
         //***randomize the "label" cell values to add additional security
             int location = rand.nextInt(20);  //is this bound inclusive?
 
-            cipher[0][2] = 48+4;
-            cipher[0][3] = 48+6;
+            cipher[0][2] = (char) (48 + spaces[0]);
+            cipher[0][3] = (char) (48 + spaces[1]);
 
             for(byte j = 65; j <= 90; j++){
                 if(j != 'E' && j != 'T' && j != 'A' && j != 'O' && j != 'N' && j != 'R' && j != 'I' && j != 'S') {
