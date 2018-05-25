@@ -20,16 +20,25 @@ public class Encipher extends Cipher{
     public String cipher(String message) {
         String enciphered = "";
 
-        enciphered += super.getEncipheredValue('/');
+//        enciphered += super.getEncipheredValue('/');
 
         message = message.toUpperCase().replace(" ", "").replace(",", "").replace(".", "").replace("\'", "").replace("!", "").replace("?", "");
         //^ read in line, make all caps, and remove all common punctuation.
 
         for(int i = 0; i < message.length(); i++){
+            if(Character.isDigit(message.charAt(i))){
+                enciphered+=super.getEncipheredValue('/');
+//                i++;
+                while(i<message.length() && Character.isDigit(message.charAt(i))){
+                    enciphered+=message.charAt(i);
+                    i++;
+                }
+                enciphered+=super.getEncipheredValue('.');
+            }
             enciphered += super.getEncipheredValue(message.charAt(i));
         }
 
-        enciphered += super.getEncipheredValue('.');
+//        enciphered += super.getEncipheredValue('.');
 
         return enciphered;
     }

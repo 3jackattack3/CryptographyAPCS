@@ -29,7 +29,7 @@ public abstract class Cipher {
         for(byte i = 0; i < cipher.length-1; i++){  //initializes the first row to the values 0-9, starting from the second cell
             cipher[i+1][0] = (char) (i+48);
         }
-        
+
         //set common characters:
             int[] spaces = new int[2];
             spaces[0] = rand.nextInt(9);
