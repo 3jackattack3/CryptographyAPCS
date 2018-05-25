@@ -91,6 +91,8 @@ public abstract class Cipher {
             cipher[l+1][2] = letters[l];
             cipher[l+1][3] = letters[l+9];
         }
+
+        writeToFile("cipher.txt");
     }
 
     public Cipher(boolean random){  //fully randomized cipher
@@ -165,6 +167,8 @@ public abstract class Cipher {
                 location++;
             }
             cipher[1 + location % 10][2 + location / 10] = '/';
+
+        writeToFile("cipher.txt");
     }
 
     public void writeToFile(String fileName){

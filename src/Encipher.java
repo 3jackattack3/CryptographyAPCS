@@ -31,12 +31,14 @@ public class Encipher extends Cipher{
             if(Character.isDigit(message.charAt(i))){
                 enciphered+=super.getEncipheredValue('/');
 //                i++;
-                while(i<message.length() && Character.isDigit(message.charAt(i))){
-                    enciphered+=message.charAt(i);
-                    i++;
-                }
+//                while(i<message.length() && Character.isDigit(message.charAt(i))){
+//                    enciphered+=message.charAt(i);
+//                    i++;
+//                }
+                enciphered+=message.charAt(i);
+                i++;  //not sure if this is necessary
                 enciphered+=super.getEncipheredValue('.');
-                i--;
+//                i--;
             }
             else enciphered += super.getEncipheredValue(message.charAt(i));
         }

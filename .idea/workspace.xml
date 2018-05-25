@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33d764e-442d-47cb-bd74-0f4ef8350ec2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/decipheredOutput.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/encipheredOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cipher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cipher.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Cipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Cipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Decipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Encipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CryptographyAPCS/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CryptographyAPCS/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Decipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Encipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,13 +28,11 @@
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="3">
+              <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Cipher#0;class#Cipher#0" />
                 <element signature="method#Cipher#1;class#Cipher#0" />
-                <element signature="method#writeToFile#0;class#Cipher#0" />
                 <element signature="method#Cipher#2;class#Cipher#0" />
                 <element signature="method#getStringCipher#0;class#Cipher#0" />
                 <element signature="method#getEncipheredValue#0;class#Cipher#0" />
@@ -36,37 +44,42 @@
       <file leaf-file-name="Encipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Encipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-              <folding>
-                <element signature="method#cipher#0;class#Encipher#0" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Decipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Decipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-              <folding>
-                <element signature="method#cipher#0;class#Decipher#0" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+            <state relative-caret-position="2">
+              <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#printMatrix#0;class#Main#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encipheredOutput.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="decipheredOutput.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decipheredOutput.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -84,10 +97,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Decipher.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Encipher.java" />
         <option value="$PROJECT_DIR$/src/Cipher.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Decipher.java" />
       </list>
     </option>
   </component>
@@ -102,7 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -111,16 +124,11 @@
               <item name="CryptographyAPCS" type="b2602c69:ProjectViewProjectNode" />
               <item name="CryptographyAPCS" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CryptographyAPCS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptographyAPCS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,7 +224,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26277372" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19099757" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3296837" />
       <window_info id="Capture Tool" order="2" />
@@ -239,14 +247,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26885644" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12478032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26885644" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -269,7 +277,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -279,9 +287,46 @@
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Cipher#0;class#Cipher#0" />
             <element signature="method#Cipher#1;class#Cipher#0" />
-            <element signature="method#writeToFile#0;class#Cipher#0" />
+            <element signature="method#Cipher#2;class#Cipher#0" />
+            <element signature="method#getStringCipher#0;class#Cipher#0" />
+            <element signature="method#getEncipheredValue#0;class#Cipher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Encipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Decipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#printMatrix#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Cipher#1;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
             <element signature="method#getEncipheredValue#0;class#Cipher#0" />
@@ -293,9 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="method#cipher#0;class#Encipher#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -303,9 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="method#cipher#0;class#Decipher#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -314,6 +353,7 @@
         <state relative-caret-position="440">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#printMatrix#0;class#Main#0" />
           </folding>
         </state>
@@ -325,9 +365,7 @@
           <caret line="87" column="76" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Cipher#0;class#Cipher#0" />
             <element signature="method#Cipher#1;class#Cipher#0" />
-            <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
             <element signature="method#getEncipheredValue#0;class#Cipher#0" />
@@ -339,9 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="method#cipher#0;class#Encipher#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -349,9 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="method#cipher#0;class#Decipher#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -360,6 +392,7 @@
         <state relative-caret-position="176">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#printMatrix#0;class#Main#0" />
           </folding>
         </state>
@@ -372,15 +405,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/decipheredOutput.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encipheredOutput.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="2">
+          <caret line="35" column="378" selection-start-line="35" selection-start-column="378" selection-end-line="35" selection-end-column="378" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Cipher#0;class#Cipher#0" />
+            <element signature="method#printMatrix#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cipher">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="94" column="31" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#Cipher#1;class#Cipher#0" />
-            <element signature="method#writeToFile#0;class#Cipher#0" />
             <element signature="method#Cipher#2;class#Cipher#0" />
             <element signature="method#getStringCipher#0;class#Cipher#0" />
             <element signature="method#getEncipheredValue#0;class#Cipher#0" />
@@ -388,33 +439,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Decipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="method#cipher#0;class#Decipher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Encipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="method#cipher#0;class#Encipher#0" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Decipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-          <folding>
-            <element signature="method#printMatrix#0;class#Main#0" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
         </state>
       </provider>
     </entry>

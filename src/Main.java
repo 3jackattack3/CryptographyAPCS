@@ -4,6 +4,9 @@
     5/23/2018
 */
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
@@ -26,10 +29,11 @@ public class Main {
         Cipher decipher = null;
         String fileName;
         String inputText;
+        File encipheredOutput;
 
 
         while(choice >= 0 ){
-            System.out.println("1. create a random encipher\n2. create a standard encipher\n3. create an encipher from a text file\n4. enter text to encipher\n5. load a file with text to encipher\n6. create a random decipher\n7. create a standard decipher\n8. create a decipher from a text file\n9. enter text to decipher\n10. load a file with text to decipher\n-1. exit");
+            System.out.println("\n1. create a random encipher\n2. create a standard encipher\n3. create an encipher from a text file\n4. enter text to encipher\n5. load a file with text to encipher\n6. create a random decipher\n7. create a standard decipher\n8. create a decipher from a text file\n9. enter text to decipher\n10. load a file with text to decipher\n11. print grid\n-1. exit");
             choice = Integer.parseInt(in.nextLine());
 
             switch(choice){
@@ -43,7 +47,32 @@ public class Main {
                         break;
                 case 4: System.out.print("please enter text to encipher: ");
                         inputText = in.nextLine();
-                        System.out.print(encipher.cipher(inputText));
+                        System.out.println("that phrase enciphered = " + encipher.cipher(inputText));
+                        writeStringToFile(encipher, inputText, "encipheredOutput.txt");
+                        break;
+                case 5: System.out.print("please enter the name of a file to encipher: ");
+                        fileName = in.nextLine();
+                        writeToFile(encipher, fileName, "encipheredOutput.txt");
+                        break;
+                case 6: decipher = new Decipher(true);
+                        break;
+                case 7: decipher = new Decipher();
+                        break;
+                case 8: System.out.print("please enter the name of the file you want to load from: ");
+                        fileName = in.nextLine();
+                        decipher = new Decipher(fileName);
+                        break;
+                case 9: System.out.print("please enter text to decipher: ");
+                        inputText = in.nextLine();
+                        System.out.println("that phrase deciphered = " + decipher.cipher(inputText));
+                        writeStringToFile(decipher, inputText, "decipheredOutput.txt");
+                        break;
+                case 10: System.out.print("please enter the name of the file you want to load from: ");
+                         fileName = in.nextLine();
+                         writeToFile(decipher, fileName, "decipheredOutput.txt");
+                         break;
+                case 11: printMatrix(encipher.getCipher());
+                //NEED A METHOD TO DISPLAY THE GRID
                 default: break;
                 }
         }
@@ -58,6 +87,62 @@ public class Main {
             System.out.println();
         }
     }
+
+    public static void writeToFile(Cipher cipher, String readFrom, String writeTo){
+        File encipherFile = new File(readFrom);
+        Scanner fileReader = null;
+        PrintWriter output = null;
+
+        try{
+            fileReader = new Scanner(encipherFile);
+        }
+        catch(FileNotFoundException e){
+            System.out.print("could not load file: " + readFrom);
+        }
+
+        try{
+            output = new PrintWriter(writeTo);
+        }
+        catch(FileNotFoundException e){
+            System.out.println("Cannot create file");
+            System.exit(1);
+        }
+
+        String line;
+
+        while(fileReader.hasNextLine()) {
+            line = fileReader.nextLine();
+            line = cipher.cipher(line);
+            output.print(line);
+            output.println();
+        }
+
+        output.close();
+    }
+
+    public static void writeStringToFile(Cipher cipher, String message, String writeTo){
+        PrintWriter output = null;
+        String line = message;
+
+        try{
+            output = new PrintWriter(writeTo);
+        }
+        catch(FileNotFoundException e){
+            System.out.println("Cannot create file");
+            System.exit(1);
+        }
+
+//        System.out.println(cipher instanceof  Encipher);
+
+        if(cipher instanceof Encipher) line = ((Encipher) cipher).cipher(message);
+        else if(cipher instanceof Decipher) line = ((Decipher) cipher).cipher(message);
+
+        output.print(line);
+        output.println();
+
+        output.close();
+    }
 }
+
 
 
