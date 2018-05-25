@@ -16,11 +16,13 @@ public class Encipher extends Cipher{
         super(fileName);
     }
 
+    public Encipher(){
+        super();
+    }
+
     @Override
     public String cipher(String message) {
         String enciphered = "";
-
-//        enciphered += super.getEncipheredValue('/');
 
         message = message.toUpperCase().replace(" ", "").replace(",", "").replace(".", "").replace("\'", "").replace("!", "").replace("?", "");
         //^ read in line, make all caps, and remove all common punctuation.
@@ -38,9 +40,6 @@ public class Encipher extends Cipher{
             }
             else enciphered += super.getEncipheredValue(message.charAt(i));
         }
-
-//        enciphered += super.getEncipheredValue('.');
-
         return enciphered;
     }
 

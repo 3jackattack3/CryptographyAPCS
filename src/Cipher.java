@@ -64,26 +64,33 @@ public abstract class Cipher {
         cipher[0][2] = (char) (48 + spaces[0]);
         cipher[0][3] = (char) (48 + spaces[1]);
 
-        for(byte j = 65; j <= 90; j++){
-            if(j != 'E' && j != 'T' && j != 'A' && j != 'O' && j != 'N' && j != 'R' && j != 'I' && j != 'S') {
-                while (cipher[1 + location % 10][2 + location / 10] != 0) {
-                    location = rand.nextInt(20);
-                }
-                cipher[1 + location % 10][2 + location / 10] = (char) j;
-            }
+        char[] letters = {'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'P', 'Q','U', 'V', 'W', 'X', 'Y', 'Z',0,0};
+
+        spaces[0] = rand.nextInt(18);
+        do{
+            spaces[1] = rand.nextInt(18);
+        }while(spaces[1] == spaces[0]);
+
+        Arrays.sort(spaces);
+
+        for(int c = 18; c > spaces[0]; c--){
+            letters[c + 1] = letters[c + 1 - 1];
         }
 
-        //sets the location of the '.' and the '/'
-        location = 0;
+        letters[spaces[0] + 1] = '/';
 
-        while (cipher[1 + location % 10][2 + location / 10] != 0) {
-            location++;
+        for(int d = 18; d > spaces[1]; d--){
+            letters[d + 1] = letters[d + 1 - 1];
         }
-        cipher[1 + location % 10][2 + location / 10] = '.';
-        while (cipher[1 + location % 10][2 + location / 10] != 0) {
-            location++;
+
+        letters[spaces[1] + 1] = '.';
+
+//        System.out.print(letters);
+
+        for(int l = 0; l < 10; l++){
+            cipher[l+1][2] = letters[l];
+            cipher[l+1][3] = letters[l+9];
         }
-        cipher[1 + location % 10][2 + location / 10] = '/';
     }
 
     public Cipher(boolean random){  //fully randomized cipher
@@ -160,13 +167,13 @@ public abstract class Cipher {
             cipher[1 + location % 10][2 + location / 10] = '/';
     }
 
-    public void writeToFile(){
-        File file = new File("cipher.txt");
+    public void writeToFile(String fileName){
+        File file = new File(fileName);
 
         PrintWriter output = null;
 
         try{
-            output = new PrintWriter("cipher.txt");
+            output = new PrintWriter(file);
         }
         catch(FileNotFoundException e){
             System.out.println("Cannot create file");

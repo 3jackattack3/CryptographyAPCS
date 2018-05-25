@@ -6,11 +6,11 @@
 
 public class Main {
     public static void main(String args[]) {
-        Cipher encipherTest = new Encipher(true);
+        Cipher encipherTest = new Encipher();
 
         printMatrix(encipherTest.getCipher());
 
-        encipherTest.writeToFile();
+        encipherTest.writeToFile("cipher.txt");
 
 //        System.out.println("\n" + encipherTest.cipher("eee"));
 
